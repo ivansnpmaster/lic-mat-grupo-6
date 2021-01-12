@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estimando o volume de uma pirâmide de base poligonal regular</title>
+  <style>
+    body {
+      padding: 0;
+      margin-top: 20px;
+    }
+    .paragraph {
+      width: 400px;
+      margin: auto;
+    }
+    .elementP {
+      width: 50%;
+      float: left;
+    }
+    .rightA {
+      text-align: right;
+    }
+    .leftA {
+      text-align: left;
+    }
+    .centerA {
+      text-align: center;
+    }
+  </style>
+  <script src="./p5.min.js"></script>
+  <!--<script src="../addons/p5.sound.min.js"></script>-->
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <div class="paragraph">
+    <h2>Estimando o volume de uma pirâmide de base poligonal regular</h2>
+  </div>
+  <div class="paragraph">
+    <div class="elementP rightA">raio circunscrito:&nbsp;&nbsp;</div>
+    <div class="elementP" style="margin: auto;">
+      <div id="rS" style="float: left;"></div>
+      <div id="rN" style="float: left;">&nbsp;&nbsp;</div>
+    </div>
+  </div>
+  <div class="paragraph">
+    <div class="elementP rightA">altura:&nbsp;&nbsp;</div>
+    <div class="elementP" style="margin: auto;">
+      <div id="hS" style="float: left;"></div>
+      <div id="hN" style="float: left;">&nbsp;&nbsp;</div>
+    </div>
+  </div>
+  <div class="paragraph">
+    <div class="elementP rightA">lados:&nbsp;&nbsp;</div>
+    <div class="elementP" style="margin: auto;">
+      <div id="nS" style="float: left;"></div>
+      <div id="nN" style="float: left;">&nbsp;&nbsp;</div>
+    </div>
+  </div>
+  <div class="paragraph">
+    <div class="elementP rightA">divisões:&nbsp;&nbsp;</div>
+    <div class="elementP" style="margin: auto;">
+      <div id="dS" style="float: left;"></div>
+      <div id="dN" style="float: left;">&nbsp;&nbsp;</div>
+    </div>
+  </div>
+
+  <div class="paragraph" style="padding-top: 30px;">
+    <!--Volume objetivo-->
+    <div class="elementP centerA" >
+      <p class="leftA" style="width: 40px; float: left;">VO</p>
+      <div class="leftA"  style="width: calc(100% - 40px); float: left;" id="vO"></div>
+    </div>
+    <!--Volume atual-->
+    <div class="elementP centerA" >
+      <p class="leftA" style="width: 30px; float: left;">VE</p>
+      <div class="leftA" style="width: calc(100% - 30px); float: left;" id="vE"></div>
+    </div>
+  </div>
+
+  <div id="canvasHolder" class="paragraph"></div>
+</body>
+
+</html>
